@@ -46,3 +46,14 @@ tests:
     - -with-rtsopts=-N
     dependencies:
     - hs-ddd
+    - hspec
+    - hspec-discover
+  hs-ddd-doctest:
+    main:                test/doctest.hs
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - hs-ddd
+    - doctest
